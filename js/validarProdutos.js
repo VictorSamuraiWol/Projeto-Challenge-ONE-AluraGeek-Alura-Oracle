@@ -72,12 +72,13 @@ buttonForm.addEventListener("click", (event)=> {
     if(valoresCorretos.nome == false || valoresCorretos.valor == false || valoresCorretos.url == false) {
         event.preventDefault();
         errorAudio.play();
-        // cleanForm();
         alert('Por favor, preencha os dados do produto corretamente!');
     }
     else {
         sendAudio.play();
         alert('Formulário enviado com sucesso!');
+        location.reload();
+
     }
 });
 

@@ -17,6 +17,12 @@
       "name": "Teclado ",
       "valor": "R$ 1.000,00",
       "imagem": "https://images.pexels.com/photos/4386404/pexels-photo-4386404.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+    },
+    {
+      "id": "06d4",
+      "name": "Teclado ",
+      "valor": "R$ 1.230,00",
+      "imagem": "https://images.pexels.com/photos/4386404/pexels-photo-4386404.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
     }
   ]
 }
