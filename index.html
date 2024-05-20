@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/styles.css">
+    <link rel="shortcut icon" href="/src/img/favicon/congumeloMario.ico" type="image/x-icon">
+    <title>Challenge AluraGeek</title>
+</head>
+<body>
+    <header>
+        <img src="/src/img/favicon/congumeloMario.png" alt="coracoes">
+        <p>AluraGeek</p>
+        <img id="marioLuigi" src="/src/img/marioLuigiGif.gif" alt="imagem mario e luigi">
+    </header>
+
+    <main>
+        <section>
+            <div id="title-products">
+                <h2>Meus Produtos:</h2>
+                <div id="divShowProducts">
+                    <ul id="showProducts">
+                        <!-- lista dos produtos -->
+                    </ul>
+                </div>
+            </div>
+            <div id="title-addProducts">
+                <h2>Adicionar Produtos:</h2>
+                <div id="divAddProducts">
+                    <form id="formulario" action="">
+                        <div>
+                            <label for="name">Nome:</label>
+                            <input class="inputFormStyle" name="name" id="name" placeholder="digite o nome..." data-name><br>
+                            <span class="errorNameMessage"></span>
+                        </div>
+
+                        <div>
+                            <label for="valor">Preço:</label>
+                            <input class="inputFormStyle" name="valor" id="valor" placeholder="digite o preço..." data-valor><br>
+                            <span class="errorPrecoMessage"></span>
+                        </div>
+
+                        <div>
+                            <label for="imagem">Imagem:</label>
+                            <input class="inputFormStyle" name="imagem" id="imagem" placeholder="digite o link da imagem..." data-imagem><br>
+                            <span class="errorUrlMessage"></span>
+                        </div>
+                        
+                        <div id="buttonsForm">
+                            <button class="buttonFormStyle1" id="send" type="submit">Guardar</button>
+                            <button class="buttonFormStyle2" id="clean" type="button">Limpar</button>
+                        </div>
+                        <img id="superMario" src="/src/img/superMarioGif.gif" alt="imagem super mario">
+                    </form>
+                    <span class="error"></span>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div>
+            <img src="/src/img/favicon/congumeloMario.png" alt="coracoes">
+            <span>AluraGeek</span>
+
+        </div>
+        <p>Desenvolvido por Victor Cardoso</p>
+        <p>ALURA LATAM- 202X</p>
+    </footer>
+
+    <script src="/js/validarProdutos.js"></script>
+    <script src="/js/mostrarProdutos.js" type="module"></script>
+    <script src="/js/adicionarProdutos.js" type="module"></script>
+    <script src="/js/excluirProdutos.js" type="module"></script>
+</body>
+</html>

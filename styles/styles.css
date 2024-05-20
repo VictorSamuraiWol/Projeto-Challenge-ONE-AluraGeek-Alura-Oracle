@@ -1,0 +1,200 @@
+:root {
+    --first-color: #5AB2FF;
+    --second-color: #FFF9D0;
+    --third-color: #CAF4FF;
+    --fourth-color: #A0DEFF;
+}
+
+html {
+    color: var(--first-color);
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0px;
+    height: 5vh;
+    background-color: var(--third-color);
+}
+
+header img {
+    width: 30px;
+    margin: 5px;
+}
+
+#marioLuigi {
+    width: 120px;
+}
+
+main section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+    background-color: var(--second-color);
+    padding: 20px 40px;
+    height: auto;
+    box-sizing: border-box;
+    border: 1px solid purple;
+}
+
+main h2 {
+    margin: 0;
+}
+
+#title-products {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 1px solid rgb(0, 13, 128);
+}
+
+#showProducts {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-wrap: wrap;
+    gap: 16px;
+    padding: 16px;
+    width: 1100px;
+    height: 600px;
+    overflow-y: scroll;
+    overscroll-behavior: initial;
+    border: 1px solid rgb(0, 128, 117);
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    list-style-type: none;
+    background-color: var(--third-color);
+    border-radius: 12px;
+    box-sizing: border-box;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#imgCards {
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.vectorIcon {
+    position: relative;
+    bottom: 25px;
+    z-index: 2;
+    cursor: pointer;
+}
+
+#title-addProducts {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 2px solid var(--fourth-color);
+    border-radius: 12px;
+    padding: 8px;
+}
+
+#divAddProducts {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 5px;
+}
+
+#divAddProducts h2 {
+    margin-bottom: 14px;
+}
+
+#divAddProducts form {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px 0px;
+    height: 10vh;
+    background-color: var(--third-color);
+}
+
+footer img {
+    width: 30px;
+    margin: 5px;
+}
+
+#superMario {
+    width: 130px;
+}
+
+footer div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+p {
+    margin: 0;
+}
+
+/* Estilizando os inputs */
+.inputFormStyle {
+    background-color: var(--second-color);
+    color: var(--first-color);
+    border: 2px solid var(--first-color);
+    border-radius: 16px;
+    padding: 8px;
+}
+
+::placeholder {
+    color: var(--first-color);
+}
+
+.buttonFormStyle1 {
+    color: var(--second-color);
+    font-weight: 700;
+    background-color: var(--first-color);
+    border-color: var(--fourth-color);
+    border-radius: 16px;
+    border-style: solid;
+    padding: 8px;
+    cursor: pointer;
+}
+
+.buttonFormStyle2 {
+    color: var(--first-color);
+    font-weight: 700;
+    background-color: var(--second-color);
+    border-color: var(--first-color);
+    border-radius: 16px;
+    border-style: solid;
+    padding: 8px;
+    cursor: pointer;
+}
+
+.correct {
+    color: green;
+    border-color: greenyellow;
+}
+
+.error {
+    color: red;
+    border-color: lightcoral;
+}
+
+.styleCards {
+    filter: drop-shadow(7px 7px 0.5px var(--first-color));
+}
