@@ -63,7 +63,7 @@ function validateUrl() {
         console.log('error!');
         inputUrl.classList.add('error');
         inputUrl.classList.remove('correct');
-        errorUrlMessage.innerText = "Por favor, digite um link que comece com 'https:' ou 'www'.";
+        errorUrlMessage.innerText = "Por favor, digite um link que comece com 'https://...' ou 'www://...'.";
     }
 };
 inputUrl.addEventListener('change', validateUrl);
