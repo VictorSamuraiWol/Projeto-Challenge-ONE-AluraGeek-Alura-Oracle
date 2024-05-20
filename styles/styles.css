@@ -1,12 +1,17 @@
 :root {
-    --first-color: #5AB2FF;
-    --second-color: #FFF9D0;
-    --third-color: #CAF4FF;
-    --fourth-color: #A0DEFF;
+    /* computador: */
+    --first-color: #424874;
+    --second-color: #DCD6F7;
+    --third-color: #A6B1E1;
+    --fourth-color: #F4EEFF;
 }
 
 html {
     color: var(--first-color);
+}
+
+body {
+    margin: 0;
 }
 
 header {
@@ -14,7 +19,6 @@ header {
     justify-content: center;
     align-items: center;
     padding: 20px 0px;
-    height: 5vh;
     background-color: var(--third-color);
 }
 
@@ -34,7 +38,6 @@ main section {
     gap: 12px;
     background-color: var(--second-color);
     padding: 20px 40px;
-    height: auto;
     box-sizing: border-box;
     border: 1px solid purple;
 }
@@ -48,7 +51,6 @@ main h2 {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    border: 1px solid rgb(0, 13, 128);
 }
 
 #showProducts {
@@ -58,11 +60,10 @@ main h2 {
     flex-wrap: wrap;
     gap: 16px;
     padding: 16px;
-    width: 1100px;
-    height: 600px;
+    height: 60vh;
     overflow-y: scroll;
-    overscroll-behavior: initial;
-    border: 1px solid rgb(0, 128, 117);
+    scrollbar-width: thin;
+    scroll-behavior: smooth;
 }
 
 .cards {
@@ -71,7 +72,7 @@ main h2 {
     align-items: center;
     flex-direction: column;
     list-style-type: none;
-    background-color: var(--third-color);
+    background-color: var(--fourth-color);
     border-radius: 12px;
     box-sizing: border-box;
     cursor: pointer;
@@ -89,6 +90,7 @@ main h2 {
     position: relative;
     bottom: 25px;
     z-index: 2;
+    width: 14px;
     cursor: pointer;
 }
 
@@ -100,6 +102,7 @@ main h2 {
     border: 2px solid var(--fourth-color);
     border-radius: 12px;
     padding: 8px;
+    width: 300px;
 }
 
 #divAddProducts {
@@ -127,7 +130,6 @@ footer {
     flex-direction: column;
     gap: 20px;
     padding: 20px 0px;
-    height: 10vh;
     background-color: var(--third-color);
 }
 

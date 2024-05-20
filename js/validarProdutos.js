@@ -5,8 +5,10 @@ const buttonForm = document.querySelector('#send');
 const errorNameMessage = document.querySelector('.errorNameMessage');
 const errorPrecoMessage = document.querySelector('.errorPrecoMessage');
 const errorUrlMessage = document.querySelector('.errorUrlMessage');
+const sendAudio = new Audio('/src/sounds/sendAudio.mp3');
+const errorAudio = new Audio('/src/sounds/errorAudio.mp3');
 const regexName = /^[A-Za-z0-9]{2}/; //inicia com minímo de 2 caracteres que podem ser letras maiúsculas ou minúsculas ou números.
-const regexPrice = /^\d+[,|.]\d{2}$/; //somente números que contém uma virgula ou ponto com as duas casas decimais.
+const regexPrice = /^\d{1,3}(\.\d{3})*,\d{2}$/; //somente números de até 3 digitos separados por ponto e que contém uma virgula para adicionar as duas casas decimais.
 const regexUrl = /^(https:\/\/|www:\/\/)[^]/; //link iniciará sempre com 'https:' ou 'www'.
 
 valoresCorretos = {
@@ -44,7 +46,7 @@ function validatePrice() {
         console.log('error!');
         inputPrice.classList.add('error');
         inputPrice.classList.remove('correct');
-        errorPrecoMessage.innerText = "Por favor, digite somente números, contendo ',' ou '.' e duas casas decimais.";
+        errorPrecoMessage.innerText = "Por favor, somente números de até 3 digitos separados por ponto e que contém uma virgula para adicionar as duas casas decimais. Ex: 100.000,00";
     }
 };
 inputPrice.addEventListener('change', validatePrice);
@@ -69,9 +71,17 @@ inputUrl.addEventListener('change', validateUrl);
 buttonForm.addEventListener("click", (event)=> {
     if(valoresCorretos.nome == false || valoresCorretos.valor == false || valoresCorretos.url == false) {
         event.preventDefault();
+        errorAudio.play();
+        // cleanForm();
         alert('Por favor, preencha os dados do produto corretamente!');
     }
     else {
+        sendAudio.play();
         alert('Formulário enviado com sucesso!');
     }
 });
+
+const cardsTest = document.querySelectorAll('.cardsTest');
+cardsTest.forEach((cards) => cards.addEventListener('click', () => {
+    window.location.href = '../pages/alert-test.html';
+}));

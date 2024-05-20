@@ -9,6 +9,8 @@ const inputUrl = document.querySelector('[data-imagem]');
 const errorNameMessage = document.querySelector('.errorNameMessage');
 const errorPrecoMessage = document.querySelector('.errorPrecoMessage');
 const errorUrlMessage = document.querySelector('.errorUrlMessage');
+const errorAudio = new Audio('/src/sounds/errorAudio.mp3');
+const cleanAudio = new Audio('/src/sounds/cleanAudio.mp3');
 
 async function addProducts(e) {
     e.preventDefault();
@@ -18,9 +20,9 @@ async function addProducts(e) {
     const newImagem = document.querySelector('[data-imagem]').value;
     try {
         if(newNome === "" || newValor === "" || newImagem === "") {
-            console.log('string vazia');
-            sendButton.classList.add('error');
-            errorMessage.innerText = 'Por favor, preencha todos os campos.'
+            // console.log('string vazia');
+            // sendButton.classList.add('error');
+            // errorMessage.innerText = 'Por favor, preencha todos os campos.'
             sendButton.preventDefault();
         } else {
             await objectApi.addItemApi(newNome, newValor, newImagem);
@@ -59,16 +61,17 @@ function cleanCleanButton() {
     cleanButton.classList.remove('error');
 };
 sendButton.addEventListener('click', cleanCleanButton);
-cleanButton.addEventListener('click', cleanSendButton);
 
-function cleanForm() {
+export function cleanForm() {
     let newNome = document.querySelector('[data-name]');
     let newValor = document.querySelector('[data-valor]');
     let newImagem = document.querySelector('[data-imagem]');
     if(newNome.value === "" && newValor.value === "" && newImagem.value === "") {
+        errorAudio.play();
         cleanButton.classList.add('error');
         errorMessage.innerText = 'Os campos já estão vazios.'
     } else {
+        cleanAudio.play();
         newNome.value = '';
         newValor.value = '';
         newImagem.value = '';

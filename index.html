@@ -4,12 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/styles/styles.css">
+    <link rel="stylesheet" href="/styles/media.css">
     <link rel="shortcut icon" href="/src/img/favicon/congumeloMario.ico" type="image/x-icon">
-    <title>Challenge AluraGeek</title>
+    <title>Challenge AluraGeek - Principal</title>
 </head>
 <body>
     <header>
-        <img src="/src/img/favicon/congumeloMario.png" alt="coracoes">
+        <img src="/src/img/favicon/congumeloMario.png" alt="congumeloIcone">
         <p>AluraGeek</p>
         <img id="marioLuigi" src="/src/img/marioLuigiGif.gif" alt="imagem mario e luigi">
     </header>
@@ -21,6 +22,36 @@
                 <div id="divShowProducts">
                     <ul id="showProducts">
                         <!-- lista dos produtos -->
+                        <li class="cards cardsTest">
+                            <img id="imgCards" src="/src/img/marioProduct.jpeg" alt="selected image" />
+                            <img id="01" class="vectorIcon icon" src="/src/img/vector.png" alt="vector image" />
+                            <span>Mario</span>
+                            <span>1.000,00</span>
+                        </li>
+                        <li class="cards cardsTest">
+                            <img id="imgCards" src="/src/img/luigiProduct.jpeg" alt="selected image" />
+                            <img id="02" class="vectorIcon icon" src="/src/img/vector.png" alt="vector image" />
+                            <span>Luigi</span>
+                            <span>1.000,00</span>
+                        </li>
+                        <li class="cards cardsTest">
+                            <img id="imgCards" src="/src/img/toadProduct.jpeg" alt="selected image" />
+                            <img id="03" class="vectorIcon icon" src="/src/img/vector.png" alt="vector image" />
+                            <span>Toad</span>
+                            <span>1.000,00</span>
+                        </li>
+                        <li class="cards cardsTest">
+                            <img id="imgCards" src="/src/img/yoshiProduct.jpeg" alt="selected image" />
+                            <img id="04" class="vectorIcon icon" src="/src/img/vector.png" alt="vector image" />
+                            <span>Yoshi</span>
+                            <span>1.000,00</span>
+                        </li>
+                        <li class="cards cardsTest">
+                            <img id="imgCards" src="/src/img/princesaProduct.jpeg" alt="selected image" />
+                            <img id="05" class="vectorIcon icon" src="/src/img/vector.png" alt="vector image" />
+                            <span>Princess</span>
+                            <span>1.000,00</span>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -47,8 +78,8 @@
                         </div>
                         
                         <div id="buttonsForm">
-                            <button class="buttonFormStyle1" id="send" type="submit">Guardar</button>
-                            <button class="buttonFormStyle2" id="clean" type="button">Limpar</button>
+                            <button class="buttonFormStyle1 buttonForm" id="send" type="submit">Guardar</button>
+                            <button class="buttonFormStyle2 buttonForm" id="clean" type="button">Limpar</button>
                         </div>
                         <img id="superMario" src="/src/img/superMarioGif.gif" alt="imagem super mario">
                     </form>
@@ -60,17 +91,17 @@
 
     <footer>
         <div>
-            <img src="/src/img/favicon/congumeloMario.png" alt="coracoes">
+            <img src="/src/img/favicon/congumeloMario.png" alt="cogumeloIcone">
             <span>AluraGeek</span>
 
         </div>
         <p>Desenvolvido por Victor Cardoso</p>
-        <p>ALURA LATAM- 202X</p>
+        <p>ALURA LATAM/ORACLE</p>
     </footer>
 
-    <script src="/js/validarProdutos.js"></script>
     <script src="/js/mostrarProdutos.js" type="module"></script>
     <script src="/js/adicionarProdutos.js" type="module"></script>
     <script src="/js/excluirProdutos.js" type="module"></script>
+    <script src="/js/validarProdutos.js"></script>
 </body>
 </html>

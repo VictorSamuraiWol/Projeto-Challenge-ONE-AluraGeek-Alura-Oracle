@@ -1,0 +1,57 @@
+@media(max-width: 1005px) {
+    :root {
+        /* tablet: */
+        --first-color: #1E2022;
+        --second-color: #F0F5F9;
+        --third-color: #C9D6DF;
+        --fourth-color: #d1d4d6;
+    }
+
+    header {
+        display: none;
+    }
+
+    main section {
+        flex-direction: row-reverse;
+    }
+}
+
+@media(max-width: 460px) {
+    :root {
+    /* celular: */
+    --first-color: #850E35;
+    --second-color: #FFF5E4;
+    --third-color: #ff3e3e;
+    --fourth-color: #b6979d;
+    }
+
+    header {
+        display: flex;
+    }
+
+    main section {
+        flex-direction: column-reverse;
+    }
+
+    #title-addProducts {
+        width: 250px;
+    }
+
+    #showProducts {
+        height: 40vh;
+        width: 60vw;
+    }
+
+    #buttonsForm {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .buttonForm {
+        height: 40px;
+        width: 100px;
+    }
+}

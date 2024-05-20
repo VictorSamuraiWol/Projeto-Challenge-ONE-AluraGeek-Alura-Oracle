@@ -1,5 +1,6 @@
 import { objectApi } from "./conexaoApi.js";
 import { deleteProduct } from "./excluirProdutos.js";
+const deleteAudio = new Audio('/src/sounds/deleteAudio.mp3');
 
 function modelProducts(imagem, nome, valor, id) {
     const divProducts = document.querySelector('#showProducts');
@@ -32,6 +33,7 @@ export async function showAllCards() {
         const deleteIcons = document.querySelectorAll('.icon');
         deleteIcons.forEach((icon) => {
             icon.addEventListener('click', () => {
+                deleteAudio.play();
                 deleteProduct(icon.id);
             });
         });
