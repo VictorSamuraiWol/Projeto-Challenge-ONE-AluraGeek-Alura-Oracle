@@ -46,8 +46,8 @@ export async function showAllCards() {
         })); 
     } catch (e) {
         console.log(e);
-        const divProducts = document.querySelector('#showProducts');
-        divProducts.innerHTML = `<h2 class="mensagem-titulo"> Não foi possível carregar a lista de produtos</h2>`;
+        // const divProducts = document.querySelector('#showProducts');
+        // divProducts.innerHTML = `<h2 class="mensagem-titulo"> Não foi possível carregar a lista de produtos</h2>`;
     }
 }
 showAllCards();
