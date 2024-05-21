@@ -10,7 +10,7 @@ async function conectionApi() {
 }
 
 async function addItemApi(nome, valor, imagem) {
-    const listaApi = await fetch("http://localhost:3000/product", 
+    const listaApi = await fetch("http://localhost:3000/products", 
     { 
         method: "POST",
         headers: {
