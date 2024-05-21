@@ -47,12 +47,6 @@
       "name": "Echo Pop",
       "valor": "R$ 350,00",
       "imagem": "https://images.pexels.com/photos/4386404/pexels-photo-4386404.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
-    },
-    {
-      "id": "afc0",
-      "name": "Coletânea de Filmes Batman",
-      "valor": "R$ 120,00",
-      "imagem": "https://images.pexels.com/photos/4386404/pexels-photo-4386404.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
     }
   ]
 }
