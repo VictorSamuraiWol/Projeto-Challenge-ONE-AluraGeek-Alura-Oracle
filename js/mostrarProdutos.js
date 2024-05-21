@@ -38,11 +38,9 @@ export async function showAllCards() {
             });
         });
         const cards = document.querySelectorAll('.cards');
-        // cards.forEach(card => card.addEventListener('mouseover', addStyleAllCards(card)));
         cards.forEach(card => card.addEventListener('mouseover', () => {
             card.classList.add('styleCards');
         })); 
-        // cards.forEach(card => card.addEventListener('mouseout', removeStyleAllCards(card)));
         cards.forEach(card => card.addEventListener('mouseout', () => {
             card.classList.remove('styleCards');
         })); 
