@@ -7,10 +7,10 @@ function modelProducts(imagem, nome, valor, id) {
     const newLiProducts = document.createElement('li');
     newLiProducts.classList = 'cards';
     newLiProducts.innerHTML = `
-    <img id="imgCards" src=${imagem} alt="selected image" />
+    <img class="imgCards" src=${imagem} alt="selected image" />
     <img id="${id}" class="vectorIcon icon" src="/src/img/vector.png" alt="vector image" />
-    <span>${nome}</span>
-    <span>${valor}</span>
+    <span class="tituloSpan">${nome}</span>
+    <span class="valorSpan">${valor}</span>
     `
     divProducts.appendChild(newLiProducts)
     

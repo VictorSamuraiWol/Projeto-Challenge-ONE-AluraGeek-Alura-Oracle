@@ -1,27 +1,75 @@
 {
   "products": [
     {
-      "id": "8ba1",
-      "name": "Monitor",
-      "valor": "R$ 1000,00",
-      "imagem": "https://images.pexels.com/photos/4386404/pexels-photo-4386404.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
-    },
-    {
       "id": "0b14",
       "name": "Carro",
       "valor": "R$ 30.000,00",
       "imagem": "https://images.pexels.com/photos/4386404/pexels-photo-4386404.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
     },
     {
-      "id": "ff53",
-      "name": "Teclado ",
-      "valor": "R$ 1.000,00",
-      "imagem": "https://images.pexels.com/photos/4386404/pexels-photo-4386404.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
-    },
-    {
       "id": "06d4",
       "name": "Teclado ",
       "valor": "R$ 1.230,00",
+      "imagem": "https://images.pexels.com/photos/4386404/pexels-photo-4386404.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+    },
+    {
+      "id": "8a57",
+      "name": "Xbox Series S",
+      "valor": "R$ 2.500,00",
+      "imagem": "https://images.pexels.com/photos/4386404/pexels-photo-4386404.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+    },
+    {
+      "id": "1d38",
+      "name": "Playstation 5",
+      "valor": "R$ 4.000,00",
+      "imagem": "https://images.pexels.com/photos/4386404/pexels-photo-4386404.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+    },
+    {
+      "id": "5049",
+      "name": "Nintendo Switch",
+      "valor": "R$ 2.000,00",
+      "imagem": "https://images.pexels.com/photos/4386404/pexels-photo-4386404.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+    },
+    {
+      "id": "4e55",
+      "name": "Projetor",
+      "valor": "R$ 1.500,00",
+      "imagem": "https://images.pexels.com/photos/4386404/pexels-photo-4386404.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+    },
+    {
+      "id": "ae1e",
+      "name": "Home Theater",
+      "valor": "R$ 800,00",
+      "imagem": "https://images.pexels.com/photos/4386404/pexels-photo-4386404.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+    },
+    {
+      "id": "0696",
+      "name": "Echo Pop",
+      "valor": "R$ 350,00",
+      "imagem": "https://images.pexels.com/photos/4386404/pexels-photo-4386404.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+    },
+    {
+      "id": "afc0",
+      "name": "Coletânea de Filmes Batman",
+      "valor": "R$ 120,00",
+      "imagem": "https://images.pexels.com/photos/4386404/pexels-photo-4386404.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+    },
+    {
+      "id": "32bb",
+      "name": "sfsafsagsagsagsgsggas",
+      "valor": "R$ 1.500,00",
+      "imagem": "https://images.pexels.com/photos/4386404/pexels-photo-4386404.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+    },
+    {
+      "id": "ef27",
+      "name": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      "valor": "R$ 12,00",
+      "imagem": "https://images.pexels.com/photos/4386404/pexels-photo-4386404.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+    },
+    {
+      "id": "49b9",
+      "name": "asaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      "valor": "R$ 12,00",
       "imagem": "https://images.pexels.com/photos/4386404/pexels-photo-4386404.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
     }
   ]

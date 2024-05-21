@@ -42,6 +42,10 @@
         width: 60vw;
     }
 
+    #title-addProducts {
+        width: 220px;
+    }
+
     #buttonsForm {
         display: flex;
         flex-direction: column;
