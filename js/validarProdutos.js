@@ -46,7 +46,7 @@ function validatePrice() {
         console.log('error!');
         inputPrice.classList.add('error');
         inputPrice.classList.remove('correct');
-        errorPrecoMessage.innerText = "Por favor, somente números de até 3 digitos separados por ponto e que contém uma virgula para adicionar as duas casas decimais. Ex: 100.000,00";
+        errorPrecoMessage.innerText = "Por favor, somente números separados por ponto a cada 3 digitos e que contenha uma virgula e duas casas decimais. Ex: 100.000,00";
     }
 };
 inputPrice.addEventListener('change', validatePrice);
