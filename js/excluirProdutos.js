@@ -6,5 +6,6 @@ export async function deleteProduct(idIcon) {
         await objectApi.deleteProducts(idIcon);
     } catch (error) {
         console.log(error);
+        alert(error);
     }
 };

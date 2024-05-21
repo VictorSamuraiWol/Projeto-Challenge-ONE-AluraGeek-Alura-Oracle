@@ -20,8 +20,8 @@ async function addProducts(evento) {
     const newImagem = document.querySelector('[data-imagem]').value;
     try {
         await objectApi.addItemApi(newNome, newValor, newImagem);
-    } catch (e) {
-        console.log(e);
+    } catch (error) {
+        console.log(error);
     }
 };
 formulario.addEventListener('submit', (e) => addProducts(e));
