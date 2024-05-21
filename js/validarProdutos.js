@@ -76,9 +76,8 @@ buttonForm.addEventListener("click", (event)=> {
     }
     else {
         sendAudio.play();
-        alert('Formulário enviado com sucesso!');
+        alert('Produto adicionado com sucesso!');
         location.reload();
-
     }
 });
 

@@ -44,8 +44,10 @@ export async function showAllCards() {
         cards.forEach(card => card.addEventListener('mouseout', () => {
             card.classList.remove('styleCards');
         })); 
-    } catch {
-        newLiProducts.innerHTML = `<h2 class="mensagem-titulo"> Não foi possível carregar a lista de videos</h2>`
+    } catch (e) {
+        console.log(e);
+        const divProducts = document.querySelector('#showProducts');
+        divProducts.innerHTML = `<h2 class="mensagem-titulo"> Não foi possível carregar a lista de produtos</h2>`;
     }
 }
 showAllCards();

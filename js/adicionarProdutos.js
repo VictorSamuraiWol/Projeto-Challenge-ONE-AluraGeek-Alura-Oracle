@@ -12,18 +12,14 @@ const errorUrlMessage = document.querySelector('.errorUrlMessage');
 const errorAudio = new Audio('/src/sounds/errorAudio.mp3');
 const cleanAudio = new Audio('/src/sounds/cleanAudio.mp3');
 
-async function addProducts(e) {
-    e.preventDefault();
+async function addProducts(evento) {
+    evento.preventDefault();
 
     const newNome = document.querySelector('[data-name]').value;
     const newValor = document.querySelector('[data-valor]').value;
     const newImagem = document.querySelector('[data-imagem]').value;
     try {
-        if(newNome === "" || newValor === "" || newImagem === "") {
-            sendButton.preventDefault();
-        } else {
-            await objectApi.addItemApi(newNome, newValor, newImagem);
-        }
+        await objectApi.addItemApi(newNome, newValor, newImagem);
     } catch (e) {
         console.log(e);
     }

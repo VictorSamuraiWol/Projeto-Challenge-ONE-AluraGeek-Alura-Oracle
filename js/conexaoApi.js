@@ -1,15 +1,16 @@
 async function conectionApi() {
     const listaApi = await fetch('http://localhost:3000/products');
-    // if (!listaApi.ok) {
-    //     throw new Error("Não foi possível conectar com a API.")
-    // }
+    if (!listaApi.ok) {
+        throw new Error("Não foi possível conectar com a API!")
+    }
+
     const listaApiJson = await listaApi.json();
 
     return listaApiJson;
 }
 
 async function addItemApi(nome, valor, imagem) {
-    const listaApi = await fetch("http://localhost:3000/products", 
+    const listaApi = await fetch("http://localhost:3000/product", 
     { 
         method: "POST",
         headers: {
@@ -20,14 +21,15 @@ async function addItemApi(nome, valor, imagem) {
             valor: `R$ ${valor}`,
             imagem: imagem
         })
-    });
-    // if (!listaApi.ok) {
-    //     throw new Error("Não foi possível adicionar o produto na API.")
-    // }
+    });    
+    if (!listaApi.ok) {
+        throw new Error("Não foi possível adicionar o produto na API!");
+    }
+
     const listaApiJson = listaApi.json();
 
     return listaApiJson;
-}
+};
 
 async function deleteProducts(id) {
      const listaApi = await fetch(`http://localhost:3000/products/${id}`, 
@@ -38,15 +40,14 @@ async function deleteProducts(id) {
             //  'Accept': 'application/json',
             //  'Access-Control-Allow-Origin': '*'
         }
-    })
-    .then(res => res.json())
-    .catch(err => console.log(err))
-    // if (!listaApi.ok) {
-    //     throw new Error("Não foi possível excluir o produto da API.")
-    // }
-    // const listaApiJson = listaApi.json();
-    
-    // return listaApiJson;
+    });
+    if (!listaApi.ok) {
+        throw new Error("Não foi possível excluir o produto da API!");
+    }
+
+    const listaApiJson = listaApi.json();
+
+    return listaApiJson;
 };
 
 export const objectApi = {
