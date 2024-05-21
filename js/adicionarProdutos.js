@@ -20,9 +20,6 @@ async function addProducts(e) {
     const newImagem = document.querySelector('[data-imagem]').value;
     try {
         if(newNome === "" || newValor === "" || newImagem === "") {
-            // console.log('string vazia');
-            // sendButton.classList.add('error');
-            // errorMessage.innerText = 'Por favor, preencha todos os campos.'
             sendButton.preventDefault();
         } else {
             await objectApi.addItemApi(newNome, newValor, newImagem);
@@ -45,11 +42,9 @@ inputs.forEach(input => {
     // estilizando os inputs
     input.addEventListener('focus', () => {
         input.style.outline = 'none';
-        // input.style.border = '2px solid var(--fourth-color)';
     });
     input.addEventListener('blur', () => {
         input.style.outline = 'none';
-        // input.style.border = '2px solid var(--first-color)';
     });
 });
 

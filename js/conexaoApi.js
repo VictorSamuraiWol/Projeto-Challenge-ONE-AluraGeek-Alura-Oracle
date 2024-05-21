@@ -1,8 +1,8 @@
 async function conectionApi() {
     const listaApi = await fetch('http://localhost:3000/products');
-    if (!listaApi.ok) {
-        throw new Error("Não foi possível conectar com a API.")
-    }
+    // if (!listaApi.ok) {
+    //     throw new Error("Não foi possível conectar com a API.")
+    // }
     const listaApiJson = await listaApi.json();
 
     return listaApiJson;
@@ -21,9 +21,9 @@ async function addItemApi(nome, valor, imagem) {
             imagem: imagem
         })
     });
-    if (!listaApi.ok) {
-        throw new Error("Não foi possível adicionar o produto na API.")
-    }
+    // if (!listaApi.ok) {
+    //     throw new Error("Não foi possível adicionar o produto na API.")
+    // }
     const listaApiJson = listaApi.json();
 
     return listaApiJson;
@@ -41,7 +41,6 @@ async function deleteProducts(id) {
     })
     .then(res => res.json())
     .catch(err => console.log(err))
-    //outra forma:
     // if (!listaApi.ok) {
     //     throw new Error("Não foi possível excluir o produto da API.")
     // }
