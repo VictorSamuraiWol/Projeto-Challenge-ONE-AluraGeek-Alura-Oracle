@@ -77,7 +77,7 @@ buttonForm.addEventListener("click", (event)=> {
     else {
         sendAudio.play();
         alert('Produto adicionado com sucesso!');
-        location.reload();
+        location.reload(); //utilizando reload somente para atualizar quando não está mockando alguma api, para zerar os inputs, se tiver usando não será necessário
     }
 });
 
