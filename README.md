@@ -13,6 +13,8 @@
 ## ✨ Features
 ✅ Bem vindos! Este é um projeto com o objetivo de criar uma aplicação que adiciona e exclui produtos na plataforma após incluir nome, valor e link da imagem utilizando HTML, CSS, JavaScript e mockando uma API com Json-Server. Minha gratidão a Deus, Oracle e Alura pela oportunidade.
 
+✅ Welcome! This project aims to create an application that adds and deletes products on the platform after including the name, price and image link using HTML, CSS, JavaScript and mocking an API with Json-Server. My gratitude goes to God, Oracle and Alura for the opportunity.
+
 <a href="https://projeto-challenge-one-alura-geek-alura-oracle.vercel.app/" title="View Project now"> 📟 Clique aqui para visualizar a aplicação</a><br/>
 <a href="https://github.com/VictorSamuraiWol/Projeto-Challenge-ONE-AluraGeek-Alura-Oracle" title="View Repository now"> 📜 Clique aqui para visualizar o reposiório</a>
 
