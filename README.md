@@ -1,7 +1,7 @@
 <p align="center">
 <img 
     src="src/img/img-alurageek.png"
-    width="500"
+    width="800"
 />
 </p>
 
@@ -9,23 +9,23 @@
 
  > ℹ️ **NOTE:** Este é um repositório desenvolvido durante os meus estudos da formação Front End T6 - Especialização do programa [ONE](https://www.oracle.com/br/education/oracle-next-education/) e na plataforma da [ALURA](https://www.alura.com.br/).
 
+## ✨ Features
 ✅ Bem vindos! Este é um projeto com o objetivo de criar uma aplicação que adiciona e exclui produtos na plataforma após incluir nome, valor e link da imagem utilizando HTML, CSS, JavaScript e mockando uma API com Json-Server. Minha gratidão a Deus, Oracle e Alura pela oportunidade.
+
+<a href="https://projeto-challenge-one-alura-geek-alura-oracle.vercel.app/" title="View Project now"> 📟 Clique aqui para visualizar a aplicação</a><br/>
+<a href="https://github.com/VictorSamuraiWol/Projeto-Challenge-ONE-AluraGeek-Alura-Oracle" title="View Repository now"> 📜 Clique aqui para visualizar o reposiório</a>
 
 ## 💻 Tecnologias utilizadas no projeto
 
+- [Trello](https://trello.com/) 
+- [Figma](https://www.figma.com/)
+- [Visual Studio Code](https://code.visualstudio.com/)
 - [HTML](https://html.com/) 
 - [CSS](https://www.w3.org/Style/CSS/Overview.en.html)
 - [JavaScript](https://www.javascript.com/)
-- [Visual Studio Code](https://code.visualstudio.com/)
 - [Json Server](https://www.npmjs.com/package/json-server)
 - [Github](https://github.com/)
 - [Vercel](https://vercel.com/)
-
-## ✔ Repositório no Github
-🔗 https://github.com/VictorSamuraiWol/Projeto-Challenge-ONE-AluraGeek-Alura-Oracle
-
-## ✔ Deploy no Vercel
-🔗 https://projeto-challenge-one-alura-geek-alura-oracle.vercel.app/
 
 ## 👨‍💻 Estudante Front End e AWS Cloud Computing
 
