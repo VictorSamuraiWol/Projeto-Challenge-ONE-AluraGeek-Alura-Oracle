@@ -9,7 +9,7 @@
 
  > ℹ️ **NOTE:** Este é um repositório desenvolvido durante os meus estudos da formação Front End T6 - Especialização do programa [ONE](https://www.oracle.com/br/education/oracle-next-education/) e na plataforma da [ALURA](https://www.alura.com.br/).
 
-✅ Bem vindos! Este é um projeto com o objetivo de criar uma aplicação que adiciona e exclui produtos na plataforma após incluir nome, valor e link da imagem utilizando HTML, CSS, JavaScript e simulando uma API com Json-Server. Minha gratidão a Deus, Oracle e Alura pela oportunidade.
+✅ Bem vindos! Este é um projeto com o objetivo de criar uma aplicação que adiciona e exclui produtos na plataforma após incluir nome, valor e link da imagem utilizando HTML, CSS, JavaScript e mockando uma API com Json-Server. Minha gratidão a Deus, Oracle e Alura pela oportunidade.
 
 ## 💻 Tecnologias utilizadas no projeto
 
