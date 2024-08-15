@@ -1,7 +1,8 @@
 <p align="center">
     <img 
         src="src/img/img-alurageek.png"
-        width="800" style="border-radius:5px; border: 1px solid blue"
+        width="800" 
+        style="border-radius:5px; border: 1px solid blue"
     />
 </p>
 
